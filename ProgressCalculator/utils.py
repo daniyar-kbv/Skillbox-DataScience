@@ -23,7 +23,7 @@ def __load_counts():
     }
 
     try:
-        with open('counts.pkl', 'rb') as f:
+        with open(f'{constants.WORK_DIR}/counts.pkl', 'rb') as f:
             counts = pickle.load(f)
             if counts:
                 return counts
@@ -34,5 +34,5 @@ def __load_counts():
 
 
 def __save_counts(counts):
-    with open('counts.pkl', 'wb') as f:
+    with open(f'{constants.WORK_DIR}/counts.pkl', 'wb') as f:
         pickle.dump(counts, f)
