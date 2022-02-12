@@ -8,3 +8,4 @@ myenv/
 *.csv
 *.xlsx
 *.sql
+*.json
