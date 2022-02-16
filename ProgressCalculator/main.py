@@ -72,7 +72,7 @@ def __quantity(step_type, work_type):
 
 
 def __print_progress(title, current, total, additional=None):
-    text = f'{title}\n[{int(current) * "-"}{int(total - current) * " "}] {current} / {total}'
+    text = f'{title}\n[{int(current) * "-"}{int(total - current) * " "}] {int(current)} / {int(total)} ({int(current / total * 100)}%)'
     if additional:
         text += f' ({additional})'
     text += '\n'
